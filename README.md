@@ -15,10 +15,9 @@ In my put method for the chaining hashtable structure, I considered using a back
 
 ### Performance on test inputs:
 
-Hashtable Structure | dictionaryFile.txt <br> (235,886 words) | dictionaryFileMedium.txt (9,897 words) | dictionaryFileSimple.txt (14 words)
+Hashtable Structure | dictionaryFile.txt <br> (235,886 words) | dictionaryFileMedium.txt <br> (9,897 words) | dictionaryFileSimple.txt <br> (14 words)
 --- | --- | --- | --- 
-Chaining | Mispelled: 135, Runtime: 0.01380 | Mispelled: 17614, Runtime: 0.28121 | Mispelled: 0, Runtime: 0.000141 
---- | --- | --- | --- 
+Chaining | Mispelled: 135 <br> Runtime: 0.01380 | Mispelled: 17614 <br>Runtime: 0.28121 | Mispelled: 0 <br>Runtime: 0.000141 
 Quadratic Probing | Mispelled: 135 <br> Runtime: 0.02723 | Mispelled: 17614 <br> Runtime: 0.521233 | Mispelled: 0 <br> Runtime: 0.000101
 
 
