@@ -1,4 +1,4 @@
-## Multi-client Chatroom
+## Testing two different hashtable implementations for spellcheck and wordcount
 
 ### Goal:
 This program designs and implements two different hashtable structures, one that uses chaining to handle collisions and one that uses quadratic probing. The structures will be used to perform word counting and spell checking. 
