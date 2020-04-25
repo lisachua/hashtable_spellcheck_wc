@@ -1,0 +1,5 @@
+main.o: main.cpp main.h HashNode.h HashTable1.h HashTable2.h \
+ ProcessTimer.h
+ProcessTimer.o: ProcessTimer.cpp ProcessTimer.h
+HashTable1.o: HashTable1.cpp HashTable1.h HashNode.h
+HashTable2.o: HashTable2.cpp HashTable2.h
