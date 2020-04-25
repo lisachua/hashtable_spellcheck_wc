@@ -15,10 +15,12 @@ In my put method for the chaining hashtable structure, I considered using a back
 
 ### Performance on test inputs:
 
-Hashtable Structure | dictionaryFile.txt (235,886 words) | dictionaryFileMedium.txt (9,897 words) | dictionaryFileSimple.txt (14 words)
+Hashtable Structure | dictionaryFile.txt <br> (235,886 words) | dictionaryFileMedium.txt (9,897 words) | dictionaryFileSimple.txt (14 words)
 --- | --- | --- | --- 
 Chaining | Mispelled: 135, Runtime: 0.01380 | Mispelled: 17614, Runtime: 0.28121 | Mispelled: 0, Runtime: 0.000141 
 --- | --- | --- | --- 
+Quadratic Probing | Mispelled: 135 <br> Runtime: 0.02723 | Mispelled: 17614 <br> Runtime: 0.521233 | Mispelled: 0 <br> Runtime: 0.000101
+
 
 The theoretical average-case run time for both hashtable structures is O(1). In the case of this program, the timers include the process of standardizing the strings to lowercase, throwing out punctuation and digits. These forloops would add to the runtime. My runtime results showed that for larger files, chaining hashtable structures were more time efficient for the spellcheck process compared to quadratic probing. For smaller dictionary files and input files however, the two hashtable’s runtimes were about the same, with quadratic probing having a slight advantage. The runtime seems to depend on the spread of the dictionary files and how often collisions occurred accordingly. Perhaps lowering the load factor for the quadratic probing hashtable could result in faster runtimes. Space complexity however would increase.
 
